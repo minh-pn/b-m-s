@@ -824,6 +824,7 @@ ul.ul-accordion {
     -ms-overflow-scrolling:touch;
     -o-overflow-scrolling:touch;
     overflow-scrolling:touch;
+    margin-top: 0;
     @media (min-width: 1200px) {
       &::-webkit-scrollbar {
         -webkit-appearance: none;
@@ -975,5 +976,9 @@ ul.ul-accordion {
     &:after,
     &:before {
       display: none;
+    }
+    &:focus {
+      outline: 0;
+      box-shadow: none;
     }
 }

@@ -55303,6 +55303,7 @@ ul.ul-accordion li a.expanded:before {
   -ms-overflow-scrolling: touch;
   -o-overflow-scrolling: touch;
   overflow-scrolling: touch;
+  margin-top: 0;
 }
 @media (min-width: 1200px) {
   .step .btn-group .multiselect-container::-webkit-scrollbar {
@@ -55463,4 +55464,8 @@ ul.ul-accordion li a.expanded:before {
 }
 .step .btn-group .multiselect:after, .step .btn-group .multiselect:before {
   display: none;
+}
+.step .btn-group .multiselect:focus {
+  outline: 0;
+  box-shadow: none;
 }
